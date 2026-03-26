@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyani's Creative Solution | Full-Stack Architect & Ghostwriter</title>
+    <meta name="description" content="Engineering digital luxury and scalable logic. Specialized in SaaS, E-commerce, and Executive Ghostwriting.">
+
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="portfolio.css">
+</head>
+<body class="loading">
+
+<div id="preloader">
+    <div class="loader-content">
+        <i class="fas fa-code loader-icon"></i>
+        <span class="loader-dot"></span>
+        <i class="fas fa-quill-pen loader-icon"></i>
+    </div>
+</div>
+
+<div class="aurora-bg"></div>
+
+<header class="glass-nav">
+    <div class="container flex-between">
+        <a href="index.html" class="logo-wrapper">
+            <img src="IMG-1.jpeg" alt="Keyani's Creative Solution" class="header-logo">
+        </a>
+
+        <nav class="nav-links">
+            <a href="#about">Philosophy</a>
+            <a href="#work">Case Studies</a>
+            <div class="connect-dropdown">
+                <button class="btn-glow">Connect <i class="fas fa-chevron-down"></i></button>
+                <div class="dropdown-content">
+                    <a href="mailto:knorrnation1998@gmail.com"><i class="fas fa-envelope"></i> Email Keyani</a>
+                    <a href="https://wa.me/2347089152079" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+                    <a href="https://www.instagram.com/keyanis_creativesolutions?igsh=MTVhNjQ0Njl5Y25mbA==" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+                    <a href="https://x.com/a_knorkoroh" target="_blank"><i class="fab fa-x-twitter"></i> X / Twitter</a>
+                    <a href="https://www.tiktok.com/@keyani_creative_solution?_r=1&_t=ZS-950nYW2vBlY" target="_blank"><i class="fab fa-tiktok"></i> TikTok</a>
+                </div>
+            </div>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <section class="hero container reveal">
+        <span class="badge">PROVEN 5-STAR DELIVERY</span>
+        <h1>Engineering <span>Digital Luxury</span> & Real Time Logic <span>Ghostwriting.</span></h1>
+        <p>We architect high-performance web applications and craft authoritative narratives for elite brands globally.</p>
+        <div class="hero-actions">
+            <a href="#work" class="btn-primary">Explore Case Studies</a>
+        </div>
+    </section>
+
+    <section id="work" class="container section-padding">
+        <div class="bento-grid">
+            <article class="bento-card large reveal">
+                <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800" alt="SaaS Project">
+                <div class="card-overlay">
+                    <div class="tag">HOTEL SAAS</div>
+                    <h3>LuxeStay Global</h3>
+                    <p>A 5-star reservation engine with real-time status management.</p>
+                </div>
+            </article>
+            <article class="bento-card logic-card reveal">
+                <i class="fas fa-search-location logic-icon"></i>
+                <h3>SEO & Indexing</h3>
+                <p>Every site is built for instant Google indexing and search visibility.</p>
+            </article>
+            <article class="bento-card logic-card reveal">
+                <i class="fas fa-bolt logic-icon"></i>
+                <h3>High Performance</h3>
+                <p>Optimized for sub-1s load speeds and industrial-grade reliability.</p>
+            </article>
+        </div>
+    </section>
+</main>
+
+<footer class="footer container section-padding">
+    <div class="glass-card footer-cta">
+        <h2>Ready to architect your <span>Vision</span>?</h2>
+        <p>Click below to request a detailed technical proposal.</p>
+        <button id="openProposal" class="btn-primary">Request a Proposal</button>
+    </div>
+    <p class="copyright">&copy; 2026 Keyani's Creative Solution. All rights reserved.</p>
+</footer>
+
+<div id="proposalModal" class="modal-overlay">
+    <div class="glass-card modal-content">
+        <button class="close-modal">&times;</button>
+        <div class="modal-header">
+            <h2>Project <span>Inquiry</span></h2>
+            <p>Provide details below and we will get back to you within 24 hours.</p>
+        </div>
+        <form action="https://formspree.io/f/xjgpvdgd" method="POST" class="proposal-form">
+            <input type="text" name="name" placeholder="Full Name" required>
+            <input type="email" name="email" placeholder="Email Address" required>
+            <select name="service" required>
+                <option value="" disabled selected>Select Service</option>
+                <option value="SaaS">SaaS Development</option>
+                <option value="Ecommerce">E-commerce Engine</option>
+                <option value="Ghostwriting">Executive Ghostwriting</option>
+            </select>
+            <textarea name="message" rows="4" placeholder="Briefly describe your project requirements..." required></textarea>
+            <button type="submit" class="btn-primary" style="width: 100%;">Submit Proposal Request</button>
+        </form>
+    </div>
+</div>
+
+<script src="portfolio.js"></script>
+</body>
+</html>
